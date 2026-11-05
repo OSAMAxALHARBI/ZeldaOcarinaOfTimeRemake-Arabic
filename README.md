@@ -16,7 +16,7 @@
 
 ## التثبيت
 
-1. سكّر المحاكي. حمّل `ZeldaOoT-Arabic-1.0.zip` من [Releases](../../releases/latest) وفك ضغطه.
+1. سكّر المحاكي. حمّل `ZeldaOoT-Arabic-1.1.zip` من [Releases](../../releases/latest) وفك ضغطه.
 2. افتح `ZeldaOoTArabic.exe`. إذا ظهرت رسالة "Windows protected your PC"، اضغط More info ثم Run anyway.
 3. اضغط «اختيار ملف اللعبة» واختر ملف `nup.` حقك، ثم «تثبيت التعريب».
 4. شغّل اللعبة من المحاكي.
@@ -65,7 +65,7 @@ replaces English.
 
 ### Install
 
-1. Close the emulator. Download `ZeldaOoT-Arabic-1.0.zip` from [Releases](../../releases/latest) and extract it.
+1. Close the emulator. Download `ZeldaOoT-Arabic-1.1.zip` from [Releases](../../releases/latest) and extract it.
 2. Open `ZeldaOoTArabic.exe`. If "Windows protected your PC" appears, click More info, then Run anyway.
 3. Press "Choose game file", pick your `.nup`, then "Install".
 4. Start the game in the emulator.

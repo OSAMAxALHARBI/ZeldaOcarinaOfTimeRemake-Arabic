@@ -17,7 +17,7 @@
 
 ## التثبيت
 
-1. سكّر المحاكي. حمّل `ZeldaOoT-Arabic-1.3.zip` من [Releases](../../releases/latest) وفك ضغطه.
+1. سكّر المحاكي. حمّل `ZeldaOoT-Arabic-1.3.1.zip` من [Releases](../../releases/latest) وفك ضغطه.
 2. افتح `ZeldaOoTArabic.exe`. إذا ظهرت رسالة "Windows protected your PC"، اضغط More info ثم Run anyway.
 3. الخطوة 1: «اختيار ملف اللعبة» واختر ملف `nup.` حقك.
 4. الخطوة 2 (اختيارية): «اختيار الخط». الخط الافتراضي هو المسيري.
@@ -87,7 +87,7 @@ logo and the boss title cards. The Arabic replaces English.
 
 ### Install
 
-1. Close the emulator. Download `ZeldaOoT-Arabic-1.3.zip` from [Releases](../../releases/latest) and extract it.
+1. Close the emulator. Download `ZeldaOoT-Arabic-1.3.1.zip` from [Releases](../../releases/latest) and extract it.
 2. Open `ZeldaOoTArabic.exe`. If "Windows protected your PC" appears, click More info, then Run anyway.
 3. Step 1: "Choose game file" and pick your `.nup`.
 4. Step 2 (optional): "Choose font". The default is El Messiri.

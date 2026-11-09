@@ -14,21 +14,51 @@
 
 1. ملف اللعبة `nup.` بالإصدار **1.1.1**: إما ملف مدمج 1.1.1، أو ملف فيه اللعبة الأساسية مع تحديث 1.1.1 (v131072). الاثنين مجربين.
 2. لغة اللعبة: **English**.
-3. محاكي [**Lichii Frizti v3**](https://github.com/Frizti/Lichii/releases/tag/frizti-v3)، حمّل الملف `Lichii-Frizti-v3-Windows-x64.zip` (مو Source code ولا ملف debug-symbols)، فك ضغطه وشغّل `lichii.exe`. الإعدادات اللي تحتاجها اللعبة جاهزة فيه، وأول مرة يسألك: **60 FPS** (يحتاج معالج سريع) أو **30 FPS** للأجهزة الأضعف، وتقدر تغيّرها من الزر جنب DOCKED.
+3. محاكي [**Fritchii v5.1**](https://github.com/Frizti/Fritchii/releases/tag/fritchii-v5.1)، حمّل الملف `Fritchii-v5.1-Windows-x64.zip` (مو Source code ولا ملف debug-symbols)، فك ضغطه وشغّل `lichii.exe`.
+   - أول تشغيل للعبة يجهّز المؤثرات مرة وحدة (حوالي 15 دقيقة)، بعدها اللعب سلس من البداية.
+   - **مهم:** اضغط على اللعبة بالزر الأيمن ← Properties ← System ← **Fast CPU Time: Normal**. لو كان Boost تمشي اللعبة أسرع من اللازم.
    إذا ظهر العالم أسود: في إعدادات اللعبة الخاصة اختر **Docked** ودقة **1x** وفعّل **Sync memory operations**.
 
 ## التثبيت
 
-1. سكّر المحاكي. حمّل `ZeldaOoT-Arabic-1.3.1.zip` من [Releases](../../releases/latest) وفك ضغطه.
-2. افتح `ZeldaOoTArabic.exe`. إذا ظهرت رسالة "Windows protected your PC"، اضغط More info ثم Run anyway.
-3. الخطوة 1: «اختيار ملف اللعبة» واختر ملف `nup.` حقك.
-4. الخطوة 2 (اختيارية): «اختيار الخط». الخط الافتراضي هو المسيري.
-5. الخطوة 3: «تثبيت التعريب». إذا كان عليه إصدار أقدم يصير الزر «تحديث التعريب».
-6. شغّل اللعبة من المحاكي.
+**للكمبيوتر:** سكّر المحاكي (أو Hookshot). حمّل [`ZeldaOoT-Arabic-2.0.zip`](https://github.com/OSAMAxALHARBI/ZeldaOcarinaOfTimeRemake-Arabic/releases/latest/download/ZeldaOoT-Arabic-2.0.zip) من [Releases](../../releases/latest) وفك ضغطه، وافتح `ZeldaOoTArabic.exe`. إذا ظهرت رسالة "Windows protected your PC"، اضغط More info ثم Run anyway.
 
-البرنامج يتأكد إن الملف هو الإصدار 1.1.1 الأصلي قبل أي تعديل، وإذا ما كان كذا يرفض وما يغيّر شيء. البرنامج بالعربي، وفيه زر English فوق إذا تبيه بالإنجليزي.
+الخطوة 1 في البرنامج تسألك **أين تلعب؟** اختر وحدة من اثنتين:
 
-خلّ ملف `arabic-undo.` جنب ملف اللعبة ولا تحذفه، وإذا نقلت ملف اللعبة انقله معه، لأن تغيير الخط والتحديث والإزالة يحتاجونه.
+### 1) ملف اللعبة (الطريقة المعتادة، كل المحاكيات)
+
+1. اختر «ملف اللعبة» ثم «اختيار ملف اللعبة» وحدد ملف `nup.` حقك.
+2. الخطوة 2 (اختيارية): «اختيار الخط». الخط الافتراضي هو المسيري.
+3. الخطوة 3 (اختيارية): محاذاة النصوص. الافتراضي «بدون (كالسابق)»: كل سطر في وسط المربع. تقدر تختار «الحوار فقط» أو «الحوار والقوائم» أو «كل النصوص»، وكل خيار معه صور من اللعبة توضح الفرق.
+4. الخطوة 4: «تثبيت التعريب». إذا كان عليه إصدار أقدم يصير الزر «تحديث التعريب».
+5. شغّل اللعبة من المحاكي.
+
+البرنامج يتأكد إن الملف هو الإصدار 1.1.1 قبل أي تعديل، ويرفضه بدون تغيير إذا ما كان كذا. بعدها يعدّل ملف `nup.` ويحفظ بيانات الإزالة في مكانين: ملف `arabic-undo.` جنب ملف اللعبة، ونسخة ثانية داخل ملف اللعبة نفسه.
+
+**التحديث من 1.0 إلى 1.3.1:** افتح البرنامج الجديد، اختر نفس الملف واضغط «تحديث التعريب». ما تحتاج تزيل الإصدار القديم أول، وحتى لو ضاع ملف `arabic-undo.` القديم، البرنامج يحاول يرجّع الملف الأصلي من ملف اللعبة نفسه ويتأكد منه، وإذا ما قدر ما يغيّر شيء.
+
+### 2) Hookshot PC Port
+
+1. اختر «Hookshot PC Port» ثم «اختيار مجلد Hookshot»، وحدد المجلد اللي فيه `hookshot.exe` ومجلد `romfs`.
+2. اختر الخط، ثم «تثبيت التعريب»، وشغّل `hookshot.exe`.
+3. الملفات الإنجليزية الأصلية تنحفظ في `_english-originals`، والإزالة ترجعها.
+4. بعد أي تحديث لـ Hookshot يعيد بناء اللعبة، ثبّت التعريب مرة ثانية.
+
+في Hookshot تبقى الأسطر في الوسط؛ خيارات المحاذاة للمحاكيات فقط.
+
+### ملفات المود (Mac وأي Port أو محاكي)
+
+حمّل [`ZeldaOoT-Arabic-2.0-Mod-Files.zip`](https://github.com/OSAMAxALHARBI/ZeldaOcarinaOfTimeRemake-Arabic/releases/latest/download/ZeldaOoT-Arabic-2.0-Mod-Files.zip) من [Releases](../../releases/latest) وفك ضغطه. فيه مجلد `Arabic (iOsamai)` (فيه `romfs` و`exefs`) بالخط المسيري وكل سطر في الوسط. انسخه لمجلد المودات في اللي تلعب فيه:
+- **Port على الكمبيوتر مثل NX2navi:** مجلد `mods` جنب ملف اللعبة `exe`.
+- **محاكي على Mac** (Eglantine أو Lichii، لأجهزة Mac بمعالج Apple M1 وأحدث) **أو أي محاكي ثاني:** مجلد مودات اللعبة (رقمها `0400486024DEC000`)، بالطريقة اللي يشرحها المحاكي.
+
+لعبتك لازم تكون الإصدار 1.1.1 وبالإنجليزي. هذي الطريقة **ما اختبرها صاحب التعريب** على كل الأجهزة والـ Ports. إذا جربتها، قل لنا من صفحة التواصل في iosamai.com.
+
+البرنامج بالعربي، وفيه زر English فوق إذا تبيه بالإنجليزي.
+
+## الترجمة في 2.0
+
+راجعنا كل أسطر اللعبة (16,228 سطرًا) مرة ثانية من أولها لآخرها، وصححنا مئات الأسطر في المعنى والمصطلحات. الأسعار صارت «X روبية» لأي رقم. أسماء مثل «دين» و«شيك» و«شارب» صارت بلون مميز عشان تنقرأ أسماء، والحروف قبل الكلمات الملوّنة صارت متصلة. وأُعيدت صياغة الكلمات اللي تحتاج شدة، ووُصلت الضحكات مثل «هيهي».
 
 ## الخطوط
 
@@ -48,13 +78,15 @@
 
 ## الإزالة
 
-افتح البرنامج، اختر نفس الملف واضغط «إزالة التعريب» تحت، ثم أكّد. يرجع الملف الأصلي كما كان بالضبط.
+افتح البرنامج، اختر نفس الطريقة ونفس الملف (أو مجلد Hookshot)، واضغط «إزالة التعريب» تحت ثم أكّد:
+- ملف اللعبة: يرجع الملف الأصلي كما كان بالضبط.
+- Hookshot: ترجع الملفات الإنجليزية الأصلية.
+- ملفات المود: احذف مجلد `Arabic (iOsamai)` من مجلد المودات.
 
 ## مشاكل معروفة
 
 - المحاكي قد يعلق أحيانًا. احفظ لعبتك كثير. هذي مشكلة في المحاكي، مو في التعريب.
 - نادرًا تظهر شاشة تحميل شديدة الإضاءة أو بلون غريب: أعد تشغيل اللعبة. مشكلة معروفة في المحاكي.
-- إذا نسخت ملف لعبة معرّب بدون ملف `arabic-undo.` اللي جنبه، البرنامج يعتبره غير مثبت ويرفضه. انسخ الملفين مع بعض.
 
 ## الحقوق
 
@@ -84,23 +116,51 @@ logo and the boss title cards. The Arabic replaces English.
 1. The game's `.nup` file at version **1.1.1**: either a merged 1.1.1 file, or the base game with the 1.1.1 update
    (v131072). Both are tested.
 2. Game language: **English**.
-3. The [**Lichii Frizti v3**](https://github.com/Frizti/Lichii/releases/tag/frizti-v3) emulator: download `Lichii-Frizti-v3-Windows-x64.zip` (not Source code or the debug-symbols file), extract it and run `lichii.exe`. The settings the game needs are built in. On the first launch it asks: **60 FPS** (needs a fast CPU) or **30 FPS** for lower-end PCs; switch any time with the button next to DOCKED.
+3. The [**Fritchii v5.1**](https://github.com/Frizti/Fritchii/releases/tag/fritchii-v5.1) emulator: download `Fritchii-v5.1-Windows-x64.zip` (not Source code or the debug-symbols file), extract it and run `lichii.exe`.
+   - The first start of the game prepares its shaders once (about 15 minutes); after that it plays smoothly.
+   - **Important:** right-click the game > Properties > System > **Fast CPU Time: Normal**. On Boost the game runs too fast.
    If the world renders black: in the game's own settings choose **Docked**, resolution **1x**, and turn on **Sync memory operations**.
 
 ### Install
 
-1. Close the emulator. Download `ZeldaOoT-Arabic-1.3.1.zip` from [Releases](../../releases/latest) and extract it.
-2. Open `ZeldaOoTArabic.exe`. If "Windows protected your PC" appears, click More info, then Run anyway.
-3. Step 1: "Choose game file" and pick your `.nup`.
-4. Step 2 (optional): "Choose font". The default is El Messiri.
-5. Step 3: "Install". If an older version is on the file, the button reads "Update the patch".
-6. Start the game in the emulator.
+**On PC:** close the emulator (or Hookshot). Download [`ZeldaOoT-Arabic-2.0.zip`](https://github.com/OSAMAxALHARBI/ZeldaOcarinaOfTimeRemake-Arabic/releases/latest/download/ZeldaOoT-Arabic-2.0.zip) from [Releases](../../releases/latest), extract it and open `ZeldaOoTArabic.exe`. If "Windows protected your PC" appears, click More info, then Run anyway.
 
-The program checks that the file is the original 1.1.1 before changing anything; if it is not, it refuses and changes
-nothing. The program opens in Arabic; the English button at the top switches it to English.
+Step 1 in the program asks **Where do you play?** Pick one of two:
 
-Keep the `.arabic-undo` file next to your game file and do not delete it. If you move the game file, move it too:
-font changes, updates and removing the patch need it.
+#### 1) Game file (the usual way, every emulator)
+
+1. Pick "Game file", then "Choose game file" and select your `.nup`.
+2. Step 2 (optional): "Choose font". The default is El Messiri.
+3. Step 3 (optional): text alignment. The default "Off (as before)" centres every line. You can choose "Dialogue only", "Dialogue + menus" or "All text"; each option shows pictures from the game.
+4. Step 4: "Install". If an older version is on the file, the button reads "Update the patch".
+5. Start the game in the emulator.
+
+The installer checks that the file is version 1.1.1 before changing anything, and refuses it without changes otherwise. It then patches your `.nup` and keeps the removal data in two places: an `.arabic-undo` file next to the game file, and a second copy inside the game file itself.
+
+**Updating from 1.0 to 1.3.1:** open the new installer, pick the same file and press "Update the patch". There is no need to remove the old version first. Even if the old `.arabic-undo` file is lost, the installer tries to rebuild the original from the game file itself and checks it; if it cannot, nothing is changed.
+
+#### 2) Hookshot PC Port
+
+1. Pick "Hookshot PC Port", then "Choose Hookshot folder" and select the folder with `hookshot.exe` and the `romfs` folder.
+2. Pick a font, press "Install", then start `hookshot.exe`.
+3. The original English files are kept in `_english-originals`; removing the patch puts them back.
+4. After a Hookshot update that rebuilds the game, install the patch again.
+
+In Hookshot lines stay centred; the alignment options are for emulators only.
+
+#### Mod files (Mac and any port or emulator)
+
+Download [`ZeldaOoT-Arabic-2.0-Mod-Files.zip`](https://github.com/OSAMAxALHARBI/ZeldaOcarinaOfTimeRemake-Arabic/releases/latest/download/ZeldaOoT-Arabic-2.0-Mod-Files.zip) from [Releases](../../releases/latest) and extract it. It holds an `Arabic (iOsamai)` folder (`romfs` and `exefs`) with the El Messiri font and every line centred. Copy it into the mods folder of what you play with:
+- **A PC port such as NX2navi:** the `mods` folder next to the game's exe.
+- **An emulator on Mac** (Eglantine or Lichii, Apple Silicon M1 or newer) **or any other emulator:** the game's mod folder (title `0400486024DEC000`), the way that emulator adds mods.
+
+Your game must be version 1.1.1, in English. This route is **not tested by the author** on every device and port. If you try it, tell us on the contact page at iosamai.com.
+
+The program opens in Arabic; the English button at the top switches it to English.
+
+### The translation in 2.0
+
+All 16,228 lines of the game were reviewed again from start to end, and hundreds of lines were corrected for meaning and terms. Prices now read «X روبية» for any number. Names such as Din, Sheik and Sharp are coloured so they read as names, and letters before coloured words now join. Words that needed a shadda were reworded, and laughs such as «هيهي» are joined.
 
 ### Fonts
 
@@ -124,15 +184,15 @@ fonts and give them to any of the four parts; the program remembers them next ti
 
 ### Uninstall
 
-Open the program, pick the same file, press "Remove the patch" at the bottom and confirm. The original file comes back
-exactly as it was.
+Open the program, pick the same route and the same file (or Hookshot folder), press "Remove the patch" at the bottom and confirm:
+- Game file: the original file comes back exactly as it was.
+- Hookshot: the original English files come back.
+- Mod files: delete the `Arabic (iOsamai)` folder from the mods folder.
 
 ### Known issues
 
 - The emulator can freeze now and then. Save often. This is an emulator issue, not the translation.
 - Rarely, a loading screen comes up overexposed or tinted: restart the game. A known emulator issue.
-- A translated game file copied without the `.arabic-undo` file next to it reads as not installed and is refused. Copy
-  both files together.
 
 ### Credits
 

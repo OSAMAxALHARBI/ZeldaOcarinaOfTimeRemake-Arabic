@@ -52,13 +52,13 @@
 - **Port على الكمبيوتر مثل NX2navi:** مجلد `mods` جنب ملف اللعبة `exe`.
 - **محاكي على Mac** (Eglantine أو Lichii، لأجهزة Mac بمعالج Apple M1 وأحدث) **أو أي محاكي ثاني:** مجلد مودات اللعبة (رقمها `0400486024DEC000`)، بالطريقة اللي يشرحها المحاكي.
 
-لعبتك لازم تكون الإصدار 1.1.1 وبالإنجليزي. هذي الطريقة **ما اختبرها صاحب التعريب** على كل الأجهزة والـ Ports. إذا جربتها، قل لنا من صفحة التواصل في iosamai.com.
+لعبتك لازم تكون الإصدار 1.1.1 وبالإنجليزي. هذي الطريقة **ما اختبرها صاحب التعريب** على كل الأجهزة والـ Ports. إذا جربتها، قل لي من صفحة التواصل في iosamai.com.
 
 البرنامج بالعربي، وفيه زر English فوق إذا تبيه بالإنجليزي.
 
 ## الترجمة في 2.0
 
-راجعنا كل أسطر اللعبة (16,228 سطرًا) مرة ثانية من أولها لآخرها، وصححنا مئات الأسطر في المعنى والمصطلحات. الأسعار صارت «X روبية» لأي رقم. أسماء مثل «دين» و«شيك» و«شارب» صارت بلون مميز عشان تنقرأ أسماء، والحروف قبل الكلمات الملوّنة صارت متصلة. وأُعيدت صياغة الكلمات اللي تحتاج شدة، ووُصلت الضحكات مثل «هيهي».
+راجعت كل أسطر اللعبة (16,228 سطرًا) مرة ثانية من أولها لآخرها، وصححت مئات الأسطر في المعنى والمصطلحات. الأسعار صارت «X روبية» لأي رقم. أسماء مثل «دين» و«شيك» و«شارب» صارت بلون مميز عشان تنقرأ أسماء، والحروف قبل الكلمات الملوّنة صارت متصلة. وأُعيدت صياغة الكلمات اللي تحتاج شدة، ووُصلت الضحكات مثل «هيهي».
 
 ## الخطوط
 
@@ -154,7 +154,7 @@ Download [`ZeldaOoT-Arabic-2.0-Mod-Files.zip`](https://github.com/OSAMAxALHARBI/
 - **A PC port such as NX2navi:** the `mods` folder next to the game's exe.
 - **An emulator on Mac** (Eglantine or Lichii, Apple Silicon M1 or newer) **or any other emulator:** the game's mod folder (title `0400486024DEC000`), the way that emulator adds mods.
 
-Your game must be version 1.1.1, in English. This route is **not tested by the author** on every device and port. If you try it, tell us on the contact page at iosamai.com.
+Your game must be version 1.1.1, in English. This route is **not tested by the author** on every device and port. If you try it, tell me on the contact page at iosamai.com.
 
 The program opens in Arabic; the English button at the top switches it to English.
 

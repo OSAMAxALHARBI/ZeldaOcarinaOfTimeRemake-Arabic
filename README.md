@@ -16,8 +16,6 @@
 2. لغة اللعبة: **English**.
 3. محاكي [**Fritchii v5.1**](https://github.com/Frizti/Fritchii/releases/tag/fritchii-v5.1)، حمّل الملف `Fritchii-v5.1-Windows-x64.zip` (مو Source code ولا ملف debug-symbols)، فك ضغطه وشغّل `lichii.exe`.
    - أول تشغيل للعبة يجهّز المؤثرات مرة وحدة (حوالي 15 دقيقة)، بعدها اللعب سلس من البداية.
-   - **مهم:** اضغط على اللعبة بالزر الأيمن ← Properties ← System ← **Fast CPU Time: Normal**. لو كان Boost تمشي اللعبة أسرع من اللازم.
-   إذا ظهر العالم أسود: في إعدادات اللعبة الخاصة اختر **Docked** ودقة **1x** وفعّل **Sync memory operations**.
 
 ## التثبيت
 
@@ -118,8 +116,6 @@ logo and the boss title cards. The Arabic replaces English.
 2. Game language: **English**.
 3. The [**Fritchii v5.1**](https://github.com/Frizti/Fritchii/releases/tag/fritchii-v5.1) emulator: download `Fritchii-v5.1-Windows-x64.zip` (not Source code or the debug-symbols file), extract it and run `lichii.exe`.
    - The first start of the game prepares its shaders once (about 15 minutes); after that it plays smoothly.
-   - **Important:** right-click the game > Properties > System > **Fast CPU Time: Normal**. On Boost the game runs too fast.
-   If the world renders black: in the game's own settings choose **Docked**, resolution **1x**, and turn on **Sync memory operations**.
 
 ### Install
 

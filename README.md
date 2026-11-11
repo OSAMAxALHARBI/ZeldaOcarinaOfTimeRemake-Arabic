@@ -19,9 +19,9 @@
 
 ## التثبيت
 
-**للكمبيوتر:** سكّر المحاكي (أو Hookshot). حمّل [`ZeldaOoT-Arabic-2.0.zip`](https://github.com/OSAMAxALHARBI/ZeldaOcarinaOfTimeRemake-Arabic/releases/latest/download/ZeldaOoT-Arabic-2.0.zip) من [Releases](../../releases/latest) وفك ضغطه، وافتح `ZeldaOoTArabic.exe`. إذا ظهرت رسالة "Windows protected your PC"، اضغط More info ثم Run anyway.
+**للكمبيوتر:** سكّر المحاكي (أو Hookshot). حمّل [`ZeldaOoT-Arabic-2.0.1.zip`](https://github.com/OSAMAxALHARBI/ZeldaOcarinaOfTimeRemake-Arabic/releases/latest/download/ZeldaOoT-Arabic-2.0.1.zip) من [Releases](../../releases/latest) وفك ضغطه، وافتح `ZeldaOoTArabic.exe`. إذا ظهرت رسالة "Windows protected your PC"، اضغط More info ثم Run anyway.
 
-الخطوة 1 في البرنامج تسألك **أين تلعب؟** اختر وحدة من اثنتين:
+الخطوة 1 في البرنامج تسألك **أين تلعب؟** اختر وحدة من ثلاث:
 
 ### 1) ملف اللعبة (الطريقة المعتادة، كل المحاكيات)
 
@@ -35,18 +35,35 @@
 
 **التحديث من 1.0 إلى 1.3.1:** افتح البرنامج الجديد، اختر نفس الملف واضغط «تحديث التعريب». ما تحتاج تزيل الإصدار القديم أول، وحتى لو ضاع ملف `arabic-undo.` القديم، البرنامج يحاول يرجّع الملف الأصلي من ملف اللعبة نفسه ويتأكد منه، وإذا ما قدر ما يغيّر شيء.
 
-### 2) Hookshot PC Port
+### 2) Hookshot PC Port (عندك Hookshot مبني)
 
-1. اختر «Hookshot PC Port» ثم «اختيار مجلد Hookshot»، وحدد المجلد اللي فيه `hookshot.exe` ومجلد `romfs`.
-2. اختر الخط، ثم «تثبيت التعريب»، وشغّل `hookshot.exe`.
-3. الملفات الإنجليزية الأصلية تنحفظ في `_english-originals`، والإزالة ترجعها.
-4. بعد أي تحديث لـ Hookshot يعيد بناء اللعبة، ثبّت التعريب مرة ثانية.
+1. اختر «Hookshot PC Port» ثم «اختيار مجلد Hookshot».
+2. **أي مجلد تختار؟** مجلد اللعبة اللي صنعه Hookshot Builder: فيه `hookshot.exe` ومجلد `romfs` (مو مجلد `bin` اللي بداخله، ومو مجلد Hookshot Builder نفسه). لو اخترت المجلد اللي فوقه أو `bin`، البرنامج يلقى المجلد الصح بنفسه.
+
+   ![مجلد لعبة Hookshot](images/hookshot-folder.jpg)
+
+   **1** اسم المجلد اللي تختاره · **2** فيه `hookshot.exe` · **3** وفيه مجلد `romfs`
+3. اختر الخط، ثم «تثبيت التعريب»، وشغّل `hookshot.exe`.
+4. التعريب ينزل في مجلد المودات حق Hookshot: `mods\Arabic (iOsamai)`، وملفات اللعبة تبقى كما هي. مع التعريب تظهر أيقونات أزرار Switch الأصلية.
+5. إذا نسختك من Hookshot أقدم من v2.0.14، البرنامج يقول لك وتقدر تحمّل الأحدث أو تتجاهل.
+6. بعد أي تحديث لـ Hookshot يعيد بناء اللعبة، ثبّت التعريب مرة ثانية.
+
+**نقل الحفظ:** في الخطوة 3 زر «نقل الحفظ» ينقل حفظك من Fritchii أو Lichii أو Eden إلى Hookshot (أو تختار مجلد المحاكي بنفسك). حفظ Hookshot القديم ينحفظ في `user\save-backups`. سكّر Hookshot والمحاكي قبلها.
+
+### 3) بناء Hookshot لي (ما عندك Hookshot)
+
+1. اختر «بناء Hookshot لي» ثم «اختيار ملف اللعبة» وحدد ملف `nup.` حقك (الإصدار 1.1.1، بدون تعريب داخله).
+2. اضغط «بناء Hookshot والتثبيت» واختر المكان. يحتاج 45 جيجا فارغة ونحو 40 دقيقة.
+3. البرنامج ينزّل Hookshot v2.0.14 الرسمي من GitHub ويتأكد من كل ملف، ويبني اللعبة على جهازك، ثم يضيف التعريب وينقل أحدث حفظ عندك.
+4. تلقى اللعبة في مجلد `Zelda OoT (Hookshot)` داخل المكان اللي اخترته: شغّل `hookshot.exe` منه. أول تشغيل أبطأ قليلا.
+
+البناء يصير على جهازك، فبرنامج الحماية يفحص الملفات. إذا حذف ملف من أدوات البناء (مثل `clang.exe`)، البرنامج يوقف ويقول لك: رجّعه من الحجر وحاول مرة ثانية.
 
 في Hookshot تبقى الأسطر في الوسط؛ خيارات المحاذاة للمحاكيات فقط.
 
 ### ملفات المود (Mac وأي Port أو محاكي)
 
-حمّل [`ZeldaOoT-Arabic-2.0-Mod-Files.zip`](https://github.com/OSAMAxALHARBI/ZeldaOcarinaOfTimeRemake-Arabic/releases/latest/download/ZeldaOoT-Arabic-2.0-Mod-Files.zip) من [Releases](../../releases/latest) وفك ضغطه. فيه مجلد `Arabic (iOsamai)` (فيه `romfs` و`exefs`) بالخط المسيري وكل سطر في الوسط. انسخه لمجلد المودات في اللي تلعب فيه:
+حمّل [`ZeldaOoT-Arabic-2.0.1-Mod-Files.zip`](https://github.com/OSAMAxALHARBI/ZeldaOcarinaOfTimeRemake-Arabic/releases/latest/download/ZeldaOoT-Arabic-2.0.1-Mod-Files.zip) من [Releases](../../releases/latest) وفك ضغطه. فيه مجلد `Arabic (iOsamai)` (فيه `romfs` و`exefs`) بالخط المسيري وكل سطر في الوسط. انسخه لمجلد المودات في اللي تلعب فيه:
 - **Port على الكمبيوتر مثل NX2navi:** مجلد `mods` جنب ملف اللعبة `exe`.
 - **محاكي على Mac** (Eglantine أو Lichii، لأجهزة Mac بمعالج Apple M1 وأحدث) **أو أي محاكي ثاني:** مجلد مودات اللعبة (رقمها `0400486024DEC000`)، بالطريقة اللي يشرحها المحاكي.
 
@@ -78,7 +95,7 @@
 
 افتح البرنامج، اختر نفس الطريقة ونفس الملف (أو مجلد Hookshot)، واضغط «إزالة التعريب» تحت ثم أكّد:
 - ملف اللعبة: يرجع الملف الأصلي كما كان بالضبط.
-- Hookshot: ترجع الملفات الإنجليزية الأصلية.
+- Hookshot: ينحذف مجلد `mods\Arabic (iOsamai)` (وترجع الملفات الإنجليزية لو كانت من 2.0).
 - ملفات المود: احذف مجلد `Arabic (iOsamai)` من مجلد المودات.
 
 ## مشاكل معروفة
@@ -119,9 +136,9 @@ logo and the boss title cards. The Arabic replaces English.
 
 ### Install
 
-**On PC:** close the emulator (or Hookshot). Download [`ZeldaOoT-Arabic-2.0.zip`](https://github.com/OSAMAxALHARBI/ZeldaOcarinaOfTimeRemake-Arabic/releases/latest/download/ZeldaOoT-Arabic-2.0.zip) from [Releases](../../releases/latest), extract it and open `ZeldaOoTArabic.exe`. If "Windows protected your PC" appears, click More info, then Run anyway.
+**On PC:** close the emulator (or Hookshot). Download [`ZeldaOoT-Arabic-2.0.1.zip`](https://github.com/OSAMAxALHARBI/ZeldaOcarinaOfTimeRemake-Arabic/releases/latest/download/ZeldaOoT-Arabic-2.0.1.zip) from [Releases](../../releases/latest), extract it and open `ZeldaOoTArabic.exe`. If "Windows protected your PC" appears, click More info, then Run anyway.
 
-Step 1 in the program asks **Where do you play?** Pick one of two:
+Step 1 in the program asks **Where do you play?** Pick one of three:
 
 #### 1) Game file (the usual way, every emulator)
 
@@ -135,18 +152,35 @@ The installer checks that the file is version 1.1.1 before changing anything, an
 
 **Updating from 1.0 to 1.3.1:** open the new installer, pick the same file and press "Update the patch". There is no need to remove the old version first. Even if the old `.arabic-undo` file is lost, the installer tries to rebuild the original from the game file itself and checks it; if it cannot, nothing is changed.
 
-#### 2) Hookshot PC Port
+#### 2) Hookshot PC Port (you already built Hookshot)
 
-1. Pick "Hookshot PC Port", then "Choose Hookshot folder" and select the folder with `hookshot.exe` and the `romfs` folder.
-2. Pick a font, press "Install", then start `hookshot.exe`.
-3. The original English files are kept in `_english-originals`; removing the patch puts them back.
-4. After a Hookshot update that rebuilds the game, install the patch again.
+1. Pick "Hookshot PC Port", then "Choose Hookshot folder".
+2. **Which folder?** The game folder the Hookshot Builder made: it has `hookshot.exe` and a `romfs` folder (not the `bin` folder inside it, and not the Hookshot Builder's own folder). If you pick the folder above it or `bin`, the installer finds the right one.
+
+   ![Hookshot game folder](images/hookshot-folder.jpg)
+
+   **1** the folder you choose · **2** it has `hookshot.exe` · **3** and a `romfs` folder
+3. Pick a font, press "Install", then start `hookshot.exe`.
+4. The patch goes into Hookshot's mods folder, `mods\Arabic (iOsamai)`, and the game files stay as they are. With the patch, the game shows its own Switch button icons.
+5. If your Hookshot is older than v2.0.14, the installer tells you; download the newer one or ignore it.
+6. After a Hookshot update that rebuilds the game, install the patch again.
+
+**Move your save:** step 3 has a "Move my save" button that copies your save from Fritchii, Lichii or Eden to Hookshot (or you choose the emulator folder). Hookshot's old save is kept in `user\save-backups`. Close Hookshot and the emulator first.
+
+#### 3) Build Hookshot (no Hookshot yet)
+
+1. Pick "Build Hookshot", then "Choose game file" and select your `.nup` (version 1.1.1, with no patch inside).
+2. Press "Build and install" and choose where it goes. It needs 45 GB free and about 40 minutes.
+3. The installer downloads the official Hookshot v2.0.14 from GitHub, checks every file, builds the game on your PC, then adds the patch and copies your newest save.
+4. The game is in a `Zelda OoT (Hookshot)` folder inside the place you chose: start `hookshot.exe` from it. The first start is a bit slower.
+
+The build runs on your PC, so your antivirus checks the files. If it removes a build tool (such as `clang.exe`), the installer stops and tells you: restore it from quarantine and try again.
 
 In Hookshot lines stay centred; the alignment options are for emulators only.
 
 #### Mod files (Mac and any port or emulator)
 
-Download [`ZeldaOoT-Arabic-2.0-Mod-Files.zip`](https://github.com/OSAMAxALHARBI/ZeldaOcarinaOfTimeRemake-Arabic/releases/latest/download/ZeldaOoT-Arabic-2.0-Mod-Files.zip) from [Releases](../../releases/latest) and extract it. It holds an `Arabic (iOsamai)` folder (`romfs` and `exefs`) with the El Messiri font and every line centred. Copy it into the mods folder of what you play with:
+Download [`ZeldaOoT-Arabic-2.0.1-Mod-Files.zip`](https://github.com/OSAMAxALHARBI/ZeldaOcarinaOfTimeRemake-Arabic/releases/latest/download/ZeldaOoT-Arabic-2.0.1-Mod-Files.zip) from [Releases](../../releases/latest) and extract it. It holds an `Arabic (iOsamai)` folder (`romfs` and `exefs`) with the El Messiri font and every line centred. Copy it into the mods folder of what you play with:
 - **A PC port such as NX2navi:** the `mods` folder next to the game's exe.
 - **An emulator on Mac** (Eglantine or Lichii, Apple Silicon M1 or newer) **or any other emulator:** the game's mod folder (title `0400486024DEC000`), the way that emulator adds mods.
 
@@ -182,7 +216,7 @@ fonts and give them to any of the four parts; the program remembers them next ti
 
 Open the program, pick the same route and the same file (or Hookshot folder), press "Remove the patch" at the bottom and confirm:
 - Game file: the original file comes back exactly as it was.
-- Hookshot: the original English files come back.
+- Hookshot: the `mods\Arabic (iOsamai)` folder is deleted (and the English files come back if they came from 2.0).
 - Mod files: delete the `Arabic (iOsamai)` folder from the mods folder.
 
 ### Known issues

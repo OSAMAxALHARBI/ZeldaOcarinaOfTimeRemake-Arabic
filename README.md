@@ -56,10 +56,10 @@
 1. اختر «بناء Hookshot لي» ثم «اختيار ملف اللعبة» وحدد ملف `nup.` حقك (الإصدار 1.1.1، أصلي بدون تعريب).
 2. اختر الإصدار: **Hookshot v2.1.0 (المجرب)**، وهو الافتراضي وينصح به، أو «آخر إصدار (على مسؤوليتك)»: ما جُرّب مع التعريب وقد لا يعمل.
 3. اضغط «بناء Hookshot والتثبيت» واختر المكان. يحتاج 45 جيجا فارغة أو أكثر (أكثر على أقراص exFAT) ونحو 40 دقيقة.
-4. البرنامج ينزّل Hookshot من GitHub ويتأكد من كل ملف، ويبني اللعبة على جهازك، ثم يضيف التعريب وينقل أحدث حفظ عندك.
+4. البرنامج ينزّل Hookshot ويتأكد من كل ملف، ويبني اللعبة على جهازك، ثم يضيف التعريب وينقل أحدث حفظ عندك.
 5. تلقى اللعبة في مجلد `Zelda OoT (Hookshot)` داخل المكان اللي اخترته: شغّل `hookshot.exe` منه. أول تشغيل أبطأ قليلا.
 
-**إذا انحذفت ملفات v2.1.0 من GitHub:** حفظنا نسخة احتياطية مطابقة، [`Hookshot-v2.1.0-BuilderParts.zip`](https://drive.google.com/file/d/1ivPgod2dfPcUVpbr72JRijWfKHK6E7Sl/view?usp=sharing) (فيها كود Hookshot المصدري ورخصته GPL). البرنامج ينزلها بنفسه إذا ما لقى الملفات، أو تقدر تنزلها وتحطها كما هي (بدون فك) جنب البرنامج أو في مجلد التنزيلات، أو تختارها من البرنامج. يتأكد من كل ملف فيها قبل ما يستخدمه.
+**صفحة Hookshot انحذفت من GitHub:** حفظنا نسخة احتياطية مطابقة من v2.1.0، [`Hookshot-v2.1.0-BuilderParts.zip`](https://drive.google.com/file/d/1ivPgod2dfPcUVpbr72JRijWfKHK6E7Sl/view?usp=sharing) (فيها كود Hookshot المصدري ورخصته GPL). البرنامج ينزلها بنفسه من Google Drive (جربناه بعد حذف الصفحة)، أو تقدر تنزلها وتحطها كما هي (بدون فك) جنب البرنامج أو في مجلد التنزيلات، أو تختارها من البرنامج. يتأكد من كل ملف فيها قبل ما يستخدمه.
 
 البناء يصير على جهازك، فبرنامج الحماية يفحص الملفات. إذا حذف ملف من أدوات البناء (مثل `clang.exe`)، البرنامج يوقف ويقول لك: رجّعه من الحجر وحاول مرة ثانية.
 
@@ -84,6 +84,7 @@
 ## نقل الحفظ
 
 - في Hookshot وNX2navi، الخطوة 3 «نقل الحفظ» تنقل حفظك من Fritchii أو Lichii أو Eden، أو من Port للثاني (NX2navi إلى Hookshot أو العكس). البرنامج يلقى الحفظ بنفسه، أو تختار المجلد.
+- **ترجع للمحاكي؟** في نفس الخطوة زر «نقل الحفظ إلى المحاكي»: ينقل حفظ Hookshot أو NX2navi إلى Fritchii أو Lichii أو Eden. حفظ المحاكي القديم ينحفظ في نسخة في `%LOCALAPPDATA%\ZeldaOoTArabic\save-backups`. ما لقى البرنامج اللعبة في المحاكي؟ شغّلها فيه مرة، ثم Open Save Data Location واختر المجلد.
 - الحفظ القديم ما ينحذف: Hookshot يحفظ نسخة في `user\save-backups`، وNX2navi يحفظ نسخة منه بنفسه.
 - ما لقى البرنامج حفظك؟ اضغط «أين أجد الحفظ؟»: الأسهل في المحاكي تضغط على اللعبة بالزر الأيمن ثم Open Save Data Location وتختار المجلد اللي ينفتح.
 - **من ملف 1.1.1 إلى ملف 2.0.0:** الاثنين نفس اللعبة ونفس الحفظ. في المحاكي الحفظ محفوظ في المحاكي نفسه مو في ملف اللعبة، فتغيير الملف ما يضيّعه: ثبّت التعريب على الملف الجديد وكمّل.
@@ -227,10 +228,10 @@ The installer checks that the file is version 1.1.1 before changing anything, an
 1. Pick "Build Hookshot", then "Choose game file" and select your `.nup` (version 1.1.1, original, with no patch on it).
 2. Pick the version: **Hookshot v2.1.0 (tested)**, the default and recommended, or "The latest (at your own risk)": not tested with the patch and may not work.
 3. Press "Build and install" and choose where it goes. It needs 45 GB free or more (more on exFAT drives) and about 40 minutes.
-4. The installer downloads Hookshot from GitHub, checks every file, builds the game on your PC, then adds the patch and copies your newest save.
+4. The installer downloads Hookshot, checks every file, builds the game on your PC, then adds the patch and copies your newest save.
 5. The game is in a `Zelda OoT (Hookshot)` folder inside the place you chose: start `hookshot.exe` from it. The first start is a bit slower.
 
-**If the v2.1.0 files are ever removed from GitHub:** an identical backup is kept, [`Hookshot-v2.1.0-BuilderParts.zip`](https://drive.google.com/file/d/1ivPgod2dfPcUVpbr72JRijWfKHK6E7Sl/view?usp=sharing) (with Hookshot's source code and its GPL licence). The installer downloads it by itself when the files are missing; you can also download it and put it, unextracted, next to the installer or in Downloads, or choose it in the installer. Every file inside is checked before use.
+**Hookshot's GitHub page was removed:** an identical backup of v2.1.0 is kept, [`Hookshot-v2.1.0-BuilderParts.zip`](https://drive.google.com/file/d/1ivPgod2dfPcUVpbr72JRijWfKHK6E7Sl/view?usp=sharing) (with Hookshot's source code and its GPL licence). The installer downloads it from Google Drive by itself (tested after the page was removed); you can also download it and put it, unextracted, next to the installer or in Downloads, or choose it in the installer. Every file inside is checked before use.
 
 The build runs on your PC, so your antivirus checks the files. If it removes a build tool (such as `clang.exe`), the installer stops and tells you: restore it from quarantine and try again.
 
@@ -255,6 +256,7 @@ In Hookshot and NX2navi lines stay centred; the alignment options are for emulat
 ### Move your save
 
 - In Hookshot and NX2navi, step 3 "Move my save" copies your save from Fritchii, Lichii or Eden, or from one port to the other (NX2navi to Hookshot or back). The installer finds the save, or you choose the folder.
+- **Going back to the emulator?** The same step has "Move it to the emulator": it copies the Hookshot or NX2navi save to Fritchii, Lichii or Eden. The emulator's old save is backed up in `%LOCALAPPDATA%\ZeldaOoTArabic\save-backups`. Game not found in the emulator? Start it there once, then use Open Save Data Location and choose that folder.
 - The old save is not deleted: Hookshot keeps a copy in `user\save-backups`, and NX2navi keeps one by itself.
 - Save not found? Press "Where is my save?": the easiest way is to right-click the game in the emulator, then Open Save Data Location, and choose the folder that opens.
 - **From the 1.1.1 file to the 2.0.0 file:** both are the same game and the same save. In an emulator the save lives in the emulator, not in the game file, so changing the file keeps it: install the patch on the new file and carry on.

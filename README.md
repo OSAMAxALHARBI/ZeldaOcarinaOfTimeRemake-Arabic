@@ -19,7 +19,7 @@
 
 ## التثبيت
 
-**للكمبيوتر:** سكّر المحاكي (أو Hookshot أو NX2navi). حمّل [`ZeldaOoT-Arabic-3.0.0.zip`](https://github.com/OSAMAxALHARBI/ZeldaOcarinaOfTimeRemake-Arabic/releases/latest/download/ZeldaOoT-Arabic-3.0.0.zip) من [Releases](../../releases/latest) وفك ضغطه، وافتح `ZeldaOoTArabic.exe`. إذا ظهرت رسالة "Windows protected your PC"، اضغط More info ثم Run anyway.
+**للكمبيوتر:** سكّر المحاكي (أو Longshot أو Hookshot أو NX2navi). حمّل [`ZeldaOoT-Arabic-3.0.1.zip`](https://github.com/OSAMAxALHARBI/ZeldaOcarinaOfTimeRemake-Arabic/releases/latest/download/ZeldaOoT-Arabic-3.0.1.zip) من [Releases](../../releases/latest) وفك ضغطه، وافتح `ZeldaOoTArabic.exe`. إذا ظهرت رسالة "Windows protected your PC"، اضغط More info ثم Run anyway.
 
 الخطوة 1 في البرنامج تسألك **أين تلعب؟** اختر وحدة من خمس:
 
@@ -34,9 +34,18 @@
 
 البرنامج يتأكد إن الملف هو الإصدار 1.1.1 قبل أي تعديل، ويرفضه بدون تغيير إذا ما كان كذا. بعدها يعدّل ملف `nup.` ويحفظ بيانات الإزالة في مكانين: ملف `arabic-undo.` جنب ملف اللعبة، ونسخة ثانية داخل ملف اللعبة نفسه.
 
-**التحديث من إصدار أقدم إلى 3.0.0:** افتح البرنامج الجديد، اختر نفس الملف واضغط «تحديث التعريب». ما تحتاج تزيل الإصدار القديم أول، وحتى لو ضاع ملف `arabic-undo.` القديم، البرنامج يحاول يرجّع الملف الأصلي من ملف اللعبة نفسه ويتأكد منه، وإذا ما قدر ما يغيّر شيء.
+**التحديث من إصدار أقدم إلى 3.0.1:** افتح البرنامج الجديد، اختر نفس الملف واضغط «تحديث التعريب». ما تحتاج تزيل الإصدار القديم أول، وحتى لو ضاع ملف `arabic-undo.` القديم، البرنامج يحاول يرجّع الملف الأصلي من ملف اللعبة نفسه ويتأكد منه، وإذا ما قدر ما يغيّر شيء.
 
 **على ملفك تعريب آخر؟** البرنامج يكتشفه ويقول لك، ويعطيك زر «أزل التعريب الآخر وأرجع الملف أصليا». يتأكد من كل ملف قبل الحفظ، وإذا ما تطابق شيء مع الأصلي ما يغيّر شيء. بعدها تثبّت تعريبنا عادي.
+
+### Longshot (عندك Longshot مبني)
+
+1. اختر «Longshot» ثم «اختيار مجلد Longshot».
+2. **أي مجلد تختار؟** مجلد اللعبة اللي صنعه Longshot Launcher: فيه `longshot.exe` ومجلد `romfs` (افتراضيا `Games\Longshot` في مجلد المستخدم). لو اخترت المجلد اللي فوقه أو `bin`، البرنامج يلقى المجلد الصح بنفسه.
+3. اختر الخط، ثم «تثبيت التعريب»، وشغّل `longshot.exe`.
+4. التعريب ينزل في مجلد المودات حق Longshot: `mods\Arabic (iOsamai)`، وملفات اللعبة تبقى كما هي. والبرنامج يضبط لغة اللعبة في `language.txt` على English (US)، لأن التعريب ما يظهر بلغة ثانية. «إزالة التعريب» يرجّع لغتك.
+5. مجرب على Longshot **v3.0.0-rc.3**. بعد أي تحديث لـ Longshot يعيد بناء اللعبة، ثبّت التعريب مرة ثانية.
+6. إذا Longshot مبني من ملف `nup.` عليه تعريب، البرنامج يقول لك وما يغيّر شيء: أزل التعريب من ملف `nup.` بالبرنامج، ثم ابنِ Longshot منه من جديد في Longshot Launcher.
 
 ### 2) Hookshot (عندك Hookshot مبني)
 
@@ -83,7 +92,7 @@
 
 ## نقل الحفظ
 
-- في Hookshot وNX2navi، الخطوة 3 «نقل الحفظ» تنقل حفظك من Fritchii أو Lichii أو Eden، أو من Port للثاني (NX2navi إلى Hookshot أو العكس). البرنامج يلقى الحفظ بنفسه، أو تختار المجلد.
+- في Longshot وHookshot وNX2navi، الخطوة 3 «نقل الحفظ» تنقل حفظك من Fritchii أو Lichii أو Eden، أو من Port للثاني (NX2navi إلى Hookshot أو العكس). البرنامج يلقى الحفظ بنفسه، أو تختار المجلد.
 - **ترجع للمحاكي؟** في نفس الخطوة زر «نقل الحفظ إلى المحاكي»: ينقل حفظ Hookshot أو NX2navi إلى Fritchii أو Lichii أو Eden. حفظ المحاكي القديم ينحفظ في نسخة في `%LOCALAPPDATA%\ZeldaOoTArabic\save-backups`. ما لقى البرنامج اللعبة في المحاكي؟ شغّلها فيه مرة، ثم Open Save Data Location واختر المجلد.
 - الحفظ القديم ما ينحذف: Hookshot يحفظ نسخة في `user\save-backups`، وNX2navi يحفظ نسخة منه بنفسه.
 - ما لقى البرنامج حفظك؟ اضغط «أين أجد الحفظ؟»: الأسهل في المحاكي تضغط على اللعبة بالزر الأيمن ثم Open Save Data Location وتختار المجلد اللي ينفتح.
@@ -92,7 +101,7 @@
 
 ### ملفات المود (Mac وأي Port أو محاكي)
 
-حمّل [`ZeldaOoT-Arabic-3.0.0-Mod-Files.zip`](https://github.com/OSAMAxALHARBI/ZeldaOcarinaOfTimeRemake-Arabic/releases/latest/download/ZeldaOoT-Arabic-3.0.0-Mod-Files.zip) من [Releases](../../releases/latest) وفك ضغطه. فيه مجلد `Arabic (iOsamai)` (فيه `romfs` و`exefs`) بالخط المسيري وكل سطر في الوسط. انسخه لمجلد المودات في اللي تلعب فيه:
+حمّل [`ZeldaOoT-Arabic-3.0.1-Mod-Files.zip`](https://github.com/OSAMAxALHARBI/ZeldaOcarinaOfTimeRemake-Arabic/releases/latest/download/ZeldaOoT-Arabic-3.0.1-Mod-Files.zip) من [Releases](../../releases/latest) وفك ضغطه. فيه مجلد `Arabic (iOsamai)` (فيه `romfs` و`exefs`) بالخط المسيري وكل سطر في الوسط. انسخه لمجلد المودات في اللي تلعب فيه:
 - **محاكي على Mac** (Eglantine أو Lichii، لأجهزة Mac بمعالج Apple M1 وأحدث) **أو أي محاكي ثاني:** مجلد مودات اللعبة (رقمها `0400486024DEC000`)، بالطريقة اللي يشرحها المحاكي.
 - **Port ثاني على الكمبيوتر:** مجلد `mods` جنب ملف اللعبة `exe`. (لـ Hookshot وNX2navi استخدم البرنامج: أسهل ومجرب.)
 
@@ -148,7 +157,7 @@
 
 افتح البرنامج، اختر نفس الطريقة ونفس الملف (أو المجلد)، وفي الخطوة 5 «التثبيت» اضغط «إزالة التعريب» ثم أكّد:
 - ملف اللعبة: يرجع الملف الأصلي كما كان بالضبط.
-- Hookshot وNX2navi: ينحذف مجلد `mods\Arabic (iOsamai)` (وفي Hookshot ترجع الملفات الإنجليزية لو كانت من 2.0).
+- Longshot وHookshot وNX2navi: ينحذف مجلد `mods\Arabic (iOsamai)` (وفي Hookshot ترجع الملفات الإنجليزية لو كانت من 2.0).
 - ملفات المود: احذف مجلد `Arabic (iOsamai)` من مجلد المودات.
 - المودات الإضافية: من صفحة «مودات إضافية» أطفئ المود ثم «تطبيق».
 
@@ -191,7 +200,7 @@ logo and the boss title cards. The Arabic replaces English.
 
 ### Install
 
-**On PC:** close the emulator (or Hookshot or NX2navi). Download [`ZeldaOoT-Arabic-3.0.0.zip`](https://github.com/OSAMAxALHARBI/ZeldaOcarinaOfTimeRemake-Arabic/releases/latest/download/ZeldaOoT-Arabic-3.0.0.zip) from [Releases](../../releases/latest), extract it and open `ZeldaOoTArabic.exe`. If "Windows protected your PC" appears, click More info, then Run anyway.
+**On PC:** close the emulator (or Longshot, Hookshot or NX2navi). Download [`ZeldaOoT-Arabic-3.0.1.zip`](https://github.com/OSAMAxALHARBI/ZeldaOcarinaOfTimeRemake-Arabic/releases/latest/download/ZeldaOoT-Arabic-3.0.1.zip) from [Releases](../../releases/latest), extract it and open `ZeldaOoTArabic.exe`. If "Windows protected your PC" appears, click More info, then Run anyway.
 
 Step 1 in the program asks **Where do you play?** Pick one of five:
 
@@ -206,9 +215,18 @@ Step 1 in the program asks **Where do you play?** Pick one of five:
 
 The installer checks that the file is version 1.1.1 before changing anything, and refuses it without changes otherwise. It then patches your `.nup` and keeps the removal data in two places: an `.arabic-undo` file next to the game file, and a second copy inside the game file itself.
 
-**Updating an older version to 3.0.0:** open the new installer, pick the same file and press "Update the patch". There is no need to remove the old version first. Even if the old `.arabic-undo` file is lost, the installer tries to rebuild the original from the game file itself and checks it; if it cannot, nothing is changed.
+**Updating an older version to 3.0.1:** open the new installer, pick the same file and press "Update the patch". There is no need to remove the old version first. Even if the old `.arabic-undo` file is lost, the installer tries to rebuild the original from the game file itself and checks it; if it cannot, nothing is changed.
 
 **Another patch on your file?** The installer finds it, tells you, and offers "Remove the other patch and restore the file". Every file is checked before saving; if anything does not match the original, nothing is changed. Then install our patch as usual.
+
+#### Longshot (you already built Longshot)
+
+1. Choose "Longshot", then "Choose Longshot folder".
+2. **Which folder?** The game folder the Longshot Launcher made: it has `longshot.exe` and a `romfs` folder (by default `Games\Longshot` in your user folder). If you pick the folder above it or `bin`, the installer finds the right one.
+3. Choose a font, then "Install the patch", and start `longshot.exe`.
+4. The patch goes into Longshot's mods folder, `mods\Arabic (iOsamai)`; the game files stay as they are. The installer sets the game language in `language.txt` to English (US), because the Arabic does not show in another language. "Remove" puts your language back.
+5. Tested on Longshot **v3.0.0-rc.3**. After any Longshot update that rebuilds the game, install the patch again.
+6. If your Longshot was built from a patched `.nup`, the installer tells you and changes nothing: remove the patch from the `.nup` with the installer, then build Longshot from it again in the Longshot Launcher.
 
 #### 2) Hookshot (you already built Hookshot)
 
@@ -255,7 +273,7 @@ In Hookshot and NX2navi lines stay centred; the alignment options are for emulat
 
 ### Move your save
 
-- In Hookshot and NX2navi, step 3 "Move my save" copies your save from Fritchii, Lichii or Eden, or from one port to the other (NX2navi to Hookshot or back). The installer finds the save, or you choose the folder.
+- In Longshot, Hookshot and NX2navi, step 3 "Move my save" copies your save from Fritchii, Lichii or Eden, or from one port to the other (NX2navi to Hookshot or back). The installer finds the save, or you choose the folder.
 - **Going back to the emulator?** The same step has "Move it to the emulator": it copies the Hookshot or NX2navi save to Fritchii, Lichii or Eden. The emulator's old save is backed up in `%LOCALAPPDATA%\ZeldaOoTArabic\save-backups`. Game not found in the emulator? Start it there once, then use Open Save Data Location and choose that folder.
 - The old save is not deleted: Hookshot keeps a copy in `user\save-backups`, and NX2navi keeps one by itself.
 - Save not found? Press "Where is my save?": the easiest way is to right-click the game in the emulator, then Open Save Data Location, and choose the folder that opens.
@@ -264,7 +282,7 @@ In Hookshot and NX2navi lines stay centred; the alignment options are for emulat
 
 #### Mod files (Mac and any port or emulator)
 
-Download [`ZeldaOoT-Arabic-3.0.0-Mod-Files.zip`](https://github.com/OSAMAxALHARBI/ZeldaOcarinaOfTimeRemake-Arabic/releases/latest/download/ZeldaOoT-Arabic-3.0.0-Mod-Files.zip) from [Releases](../../releases/latest) and extract it. It holds an `Arabic (iOsamai)` folder (`romfs` and `exefs`) with the El Messiri font and every line centred. Copy it into the mods folder of what you play with:
+Download [`ZeldaOoT-Arabic-3.0.1-Mod-Files.zip`](https://github.com/OSAMAxALHARBI/ZeldaOcarinaOfTimeRemake-Arabic/releases/latest/download/ZeldaOoT-Arabic-3.0.1-Mod-Files.zip) from [Releases](../../releases/latest) and extract it. It holds an `Arabic (iOsamai)` folder (`romfs` and `exefs`) with the El Messiri font and every line centred. Copy it into the mods folder of what you play with:
 - **An emulator on Mac** (Eglantine or Lichii, Apple Silicon M1 or newer) **or any other emulator:** the game's mod folder (title `0400486024DEC000`), the way that emulator adds mods.
 - **Another PC port:** the `mods` folder next to the game's exe. (For Hookshot and NX2navi use the installer: easier and tested.)
 
@@ -324,7 +342,7 @@ fonts and give them to any of the four parts; the program remembers them next ti
 
 Open the program, pick the same route and the same file (or folder), and in step 5, "Install", press "Remove the patch" and confirm:
 - Game file: the original file comes back exactly as it was.
-- Hookshot and NX2navi: the `mods\Arabic (iOsamai)` folder is deleted (in Hookshot the English files also come back if they came from 2.0).
+- Longshot, Hookshot and NX2navi: the `mods\Arabic (iOsamai)` folder is deleted (in Hookshot the English files also come back if they came from 2.0).
 - Mod files: delete the `Arabic (iOsamai)` folder from the mods folder.
 - Extra mods: on the Extra mods page, turn the mod off, then press Apply.
 
